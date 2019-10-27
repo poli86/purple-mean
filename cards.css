@@ -1,0 +1,124 @@
+.site-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.site-content main {
+  padding: 2rem;
+  flex: 1 1 35rem;
+  background: #666;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+.site-content aside {
+  flex: 1 1 20rem;
+  padding: 2rem;
+  background: #aaa;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  
+}
+
+.cards-list {
+  display: flex;
+  justify-content: space-between;
+}
+.cards-list:before,
+.cards-list:after {
+  display: block;
+  content: '';
+  order: 1000;
+}
+
+.cards-list:before,
+.card,
+.cards-list:after {
+  flex: 0 0 32%;
+}
+.card {
+  border: 1px solid #666;
+  border-radius: 0.3em;
+  overflow: hidden;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3em;
+  margin: 0.5em;
+
+}
+
+.card-media:before {
+  display: block;
+  content: '';
+  padding-top: 56.25%;
+}
+
+.card-media:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  right: 0;bottom: 0;
+  border: 1px solid #000;
+  border-radius: 0.3em;
+}
+
+.card-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-header {
+  padding: 0.5em 1.5em;
+  padding-top: 1em;
+  line-height: 1.1;
+  text-align: center;
+
+   
+}
+
+.card-content {
+  padding: 0.5em 1.5em;
+  padding-bottom: 1.5em;
+  flex-grow: 1;
+}
+
+.card-footer {
+  border-top: 1px solid #000;
+}
+
+.card-footer ul {
+  display: flex;
+}
+
+.card-footer li {
+  list-style: none;
+  flex: 1 1 auto;
+}
+
+.card-footer li:first-child {
+  border-right: 1px solid #000;
+}
+
+.card-footer a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  color: #000;
+}
+
+.card-footer a:hover {
+  background: #000;
+  color: #fff;
+}

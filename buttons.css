@@ -1,0 +1,32 @@
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    border: 2px solid #FFF;
+    text-decoration: none;
+    color: #FFF;
+    outline: none;
+    margin-bottom: 7em;
+}
+
+.button:focus,
+.button:hover {
+    background: purple;
+    color: #FFF;
+    border-color: purple;
+}
+
+.button-primary {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    border: 2px solid #000;
+    text-decoration: none;
+    color: purple;
+    outline: none;
+    margin-top: 2em;
+}
+
+.button-footer {
+    padding: 0;
+}
